@@ -1,0 +1,48 @@
+body{
+  background-color: lightblue;
+  padding: 50px;
+}
+
+.Box{
+  width: 20%;
+}
+
+div.input{
+  width: 100%;
+  position: relative;
+  margin: 15px 0px 5px 0px;
+}
+
+div.input input,
+div.input textarea{
+  display: block;
+  width: 100%;
+  padding: 5px;
+  font-size: 1.2em;
+  color: #333;
+  border: 0;
+  border-bottom: 1px solid #333;
+  background-color: #00000000;
+}
+
+div.input label{
+  position: absolute;
+  color: #333333AA;
+  
+  top: 10px;
+  left: 8px;
+  
+  -webkit-transition: 0.12s ease-in-out 0s;
+	-moz-transition   : 0.12s ease-in-out 0s;
+	-o-transition     : 0.12s ease-in-out 0s;
+}
+
+div.input input:focus ~ label,
+div.input textarea:focus ~ label,
+div.input input.On ~ label,
+div.input textarea.On ~ label{
+  color: #333333;
+  
+  top: -13px;
+  left: 0px;
+}
